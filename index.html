@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Project_3</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/solid.min.css"
+            integrity="sha512-SazV6tF6Ko4GxhyIZpKoXiKYndqzh7+cqxl9HDH7DGSpjkCN3QLqTAlhJHJnKxu3/2rfCsltzwFC4CmxZE1hPg=="
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
+            integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <img class="pic" src="backpic.jpg" alt="coin_img" />
+
+        <div class="nav_background"></div>
+        <div class="dropdown">
+            <i class="fas fa-bars"></i>
+
+            <nav class="nav_container">
+                <a class="nav_element activ" href="index.html">TopCoins</a>
+                <a class="nav_element whitepaper" href="whitepaper.html"
+                    >Whitepapers</a
+                >
+            </nav>
+        </div>
+        <span class="datime datetime"></span>
+
+        <h1 class="title">Top Coins Today</h1>
+        <form action="#" class="form_container">
+            <label class="select"
+                >The top
+                <select name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="3000">All</option>
+                </select>
+                cryptocurrency
+            </label>
+            <label class="check">
+                <input class="js_rank_check" type="checkbox" checked />
+                Rank
+            </label>
+            <label class="check">
+                <input class="js_price_check" type="checkbox" checked />
+                Price
+            </label>
+            <label class="check">
+                <input class="js_volume_check" type="checkbox" />
+                Volume-24h
+            </label>
+            <label class="check">
+                <input class="js_market_check" type="checkbox" />
+                Marketcup
+            </label>
+            <label class="check">
+                <input class="js_change_check" type="checkbox" />
+                Change-24h
+            </label>
+            <label class="check">
+                <input class="js_symbol_check" type="checkbox" />
+                Symbol
+            </label>
+            <input type="submit" value="Show" class="show" />
+        </form>
+        <section class="ranklist"></section>
+        <section class="mutat_container"></section>
+        <footer>© Laszlo Borsos 2020</footer>
+        <script src="topcoins.js"></script>
+    </body>
+</html>
